@@ -14,7 +14,7 @@ struct ContentView: View {
                 }
             }
             .onAppear {
-                let url = URL(string: "https://api.findawayworld.com/v4/audio/jX1t)WFF7jhHf3VIsShz3I5NXVGRvL4jlXU0Icm5oCIIAv4UFw9Gdat5TwcTpE1eXCNU(m0AWfezjxHd7PaSb8l4inCjRc25JeaPpK7PjdcXfbLfYJQDqDIKOQP347Sf4U)Gg24ytDY=.mp3")!
+                let url = URL(string: "https://SET-YOUR-MP3-URL-HERE.mp3")!
                 let destinationUrl = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!.appendingPathComponent(url.lastPathComponent)
                 downloadManager.downloadFile(from: url, to: destinationUrl)
             }
